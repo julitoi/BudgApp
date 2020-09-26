@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    </link>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    </link>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    </link>
+    <title>BudgApp</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="headline">Available Budget in <span class="date_label">%current month%</span>:</h1>
+        <div class="budget_total">+ 250.00</div>
+        <div class="h_income clearfix">
+            <div class="h_income_title left">INCOME</div>
+            <div class="right">
+                <div class="h_income_value">+ 300.00</div>
+                <div class="h_income_percentage">---</div>
+            </div>
+        </div>
+        <div class="h_expense clearfix">
+            <div class="h_expense_title left">EXPENSE</div>
+            <div class="right">
+                <div class="h_expense_value">- 30.00</div>
+                <div class="h_expense_percentage">---</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="input_section">
+            <select class="add_selection">
+                <option value="inc">+</option>
+                <option value="exp">-</option>
+            </select>
+            <input type="text" placeholder="Add description" class="add_description" />
+            <input type="number" placeholder="Value" class="add_value" />
+            <button class="add_btn">
+                <i class="ion-ios-checkmark-outline"></i>
+            </button>
+        </div>
+        <div class="container">
+            <div class="income_list">
+                <h2>Income</h2>
+                <!--<div class="list-item" id="income-0">
+                        <div class="item_description">Description</div>
+                        <div class="right">
+                            <div class="item_value">+ 300.00</div>
+                            <div class="item_delete">
+                                <button class="item_delete-btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+            </div>
+            <div class="expenses_list">
+                <h2>Expenses</h2>
+                <!--<div class="list-item clearfix" id="expense-0">
+                        <div class="item_description">Description</div>
+                        <div class="right clearfix">
+                        <div class="item_value">- 30.00</div>
+                        <div class="item_percentage">21%</div>
+                        <div class="item_delete">
+                            <button class="item_delete-btn"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                    </div>
+                    </div>
+                    -->
+            </div>
+        </div>
+    </main>
+
+</body>
+
+
+<script src="app.js"></script>
+
+</html>
